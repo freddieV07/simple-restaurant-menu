@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Mama Rosa's Kitchen</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍝</text></svg>" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+      margin: 20px;
+    }
+
+    header {
+      background-color: #8b1a1a;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav {
+      margin: 15px 0;
+    }
+
+    nav a {
+      margin-right: 15px;
+      color: #8b1a1a;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h2 {
+      color: #8b1a1a;
+    }
+
+    /* Category list styles */
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      display: inline-block;
+      padding: 5px 12px;
+      margin: 4px;
+      border-radius: 15px;
+      font-weight: bold;
+    }
+
+    .starters  { background-color: #fde9b0; }
+    .mains     { background-color: #ffd6d6; }
+    .desserts  { background-color: #e0d6f5; }
+    .drinks    { background-color: #d6eaf8; }
+
+    /* Table styles */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    th {
+      background-color: #8b1a1a;
+      color: white;
+      padding: 8px;
+      text-align: left;
+    }
+
+    td {
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fdf0e0;
+    }
+
+    img {
+      width: 180px;
+      height: 120px;
+      object-fit: cover;
+      margin: 5px;
+      border: 2px solid #ddd;
+      border-radius: 6px;
+    }
+
+    footer {
+      margin-top: 30px;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🍝 Mama Rosa's Kitchen</h1>
+    <p>Authentic Italian Food · Lagos, Nigeria</p>
+  </header>
+
+  <nav>
+    <a href="#categories">Categories</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#menu">Menu</a>
+    <a href="#drinks">Drinks</a>
+  </nav>
+
+  <!-- Categories -->
+  <section id="categories">
+    <h2>Menu Categories</h2>
+    <ul>
+      <li class="starters">🥗 Starters</li>
+      <li class="mains">🍖 Mains</li>
+      <li class="desserts">🍮 Desserts</li>
+      <li class="drinks">🥤 Drinks</li>
+    </ul>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <h2>Food Photos</h2>
+    <img src="https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=300&q=80" alt="Pizza" />
+    <img src="https://images.unsplash.com/photo-1612874742237-6526221588e3?w=300&q=80" alt="Spaghetti" />
+    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=300&q=80" alt="Tiramisu" />
+  </section>
+
+  <!-- Menu Table -->
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Dish</th>
+          <th>Description</th>
+          <th>Price (₦)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="3"><strong>Starters</strong></td>
+        </tr>
+        <tr>
+          <td>Bruschetta</td>
+          <td>Toasted bread with tomatoes and basil</td>
+          <td>2,500</td>
+        </tr>
+        <tr>
+          <td>Caprese Salad</td>
+          <td>Mozzarella, tomatoes, and olive oil</td>
+          <td>3,500</td>
+        </tr>
+
+        <tr>
+          <td colspan="3"><strong>Mains</strong></td>
+        </tr>
+        <tr>
+          <td>Spaghetti Bolognese</td>
+          <td>Beef ragù with spaghetti and parmesan</td>
+          <td>6,500</td>
+        </tr>
+        <tr>
+          <td>Pizza Margherita</td>
+          <td>Tomato, mozzarella, and fresh basil</td>
+          <td>6,000</td>
+        </tr>
+        <tr>
+          <td>Beef Lasagne</td>
+          <td>Layered pasta, beef, and béchamel sauce</td>
+          <td>7,000</td>
+        </tr>
+
+        <tr>
+          <td colspan="3"><strong>Desserts</strong></td>
+        </tr>
+        <tr>
+          <td>Tiramisu</td>
+          <td>Mascarpone and espresso-soaked ladyfingers</td>
+          <td>3,500</td>
+        </tr>
+        <tr>
+          <td>Gelato</td>
+          <td>2 scoops — vanilla, chocolate, or strawberry</td>
+          <td>2,500</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Drinks Table -->
+  <section id="drinks">
+    <h2>Drinks</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Drink</th>
+          <th>Price (₦)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Water (500ml)</td>
+          <td>500</td>
+        </tr>
+        <tr>
+          <td>Fresh Orange Juice</td>
+          <td>1,500</td>
+        </tr>
+        <tr>
+          <td>Soft Drink (Coke / Fanta)</td>
+          <td>800</td>
+        </tr>
+        <tr>
+          <td>Espresso</td>
+          <td>1,200</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>📍 12 Awolowo Road, Lagos &nbsp;|&nbsp; 📞 0801-234-5678</p>
+    <p>Open daily: 11am – 10pm</p>
+  </footer>
+
+</body>
+</html>
